@@ -1,0 +1,11 @@
+language: vi
+pipeline: tensorflow_embedding
+
+policies:
+  - name: FallbackPolicy
+  - name: MemoizationPolicy
+  - name: FormPolicy
+  - name: MappingPolicy
+  - name: EmbeddingPolicy
+    epoch: 20
+

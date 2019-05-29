@@ -1,0 +1,96 @@
+intents:
+- affirm
+- support
+- greet
+- deny
+- bye
+- click_error
+- scroll_error
+- pointer_error
+- other_error
+
+actions:
+- utter_greet
+- utter_bye
+- utter_did_that_help
+- utter_ask_issue
+- utter_ask_result
+- utter_ask_time_of_buying
+- utter_ask_first_from_error_click
+- utter_ask_second_from_error_click
+- utter_inform_second_from_error_click
+- utter_sorry
+- utter_final_error_click
+- utter_ask_first_from_error_pointer
+- utter_ask_first_from_error_other
+
+templates:
+  utter_greet:
+  - text: "xin chào tôi có thể giúp gì cho bạn"
+  - text: "hello chúc một ngày tốt lành bạn cần giúp gì"
+  - text: "chào bạn bạn cần hỗ trợ điều gì"
+
+  utter_bye:
+  - text: "tạm biệt bạn"
+  - text: "bibi"
+  - text: "tạm biệt, có gì bạn cứ liên hệ mình nhé"
+  - text: "cảm ơn bạn đã ghé shop, có gì cứ chat với mình, mình sẽ hỗ trợ!!!!"
+
+  utter_did_that_help:
+    - text: "ok hok bạn?"
+    - text: "sửa được hok bạn?"
+    - text: "tình hình ổn không bạn?"
+    - text: "bạn fix được chưa"
+
+  utter_ask_issue:
+    - text: "chuột bạn gặp phải vấn đề gì"
+
+  utter_ask_result:
+    - text: "bạn đã sửa được lỗi chưa"
+      buttons:
+        - title: "được rồi"
+          payload: "/intent_yes"
+        - title: "chưa"
+          payload: "/intent_no"
+
+  utter_ask_first_from_error_click:
+    - text: "vui lòng tháo chuột ra khỏi máy tính và kết nối với cổng usb khác.(trong trường hợp có nhiều cổng usb,hãy thử tất cả các cổng)"
+
+  utter_ask_second_from_error_click:
+    - text: "Tìm hiểu xem nguyên nhân là do chuột hay là do máy tính,sau đó kết nối chuột với máy tính khác."
+
+  utter_inform_second_from_error_click:
+    - text: "Chúng tôi rất xin lỗi, nhưng có khả năng chuột bị hỏng.
+             Chuột sẽ được bảo hành 6 tháng kể từ ngày mua.
+             Qúy khách vui lòng xác nhận lại hóa đơn tại thời điểm mua hàng,phiếu giao hàng,ngày mua hàng"
+
+  utter_ask_time_of_buying:
+    - text: "bạn có gặp sự cố trong thời gian 6 tháng bạn mua không?"
+      buttons:
+        - title: "có"
+          payload: "/intent_yes"
+        - title: "không"
+          payload: "/intent_yes"
+
+  utter_sorry:
+    - text: "Chúng tôi rất xin lỗi, nhưng chúng tôi khuyên bạn nên xem xét việc thay thế nó bằng một con chuột mới.
+
+             * Nếu bạn trả tiền cho dịch vụ tại trung tâm sửa chữa của chúng tôi, sẽ có phí lao động + phí phụ tùng, v.v.
+             Nó có thể cao hơn so với việc mua một con chuột mới.
+
+             Cảm ơn bạn đã sử dụng nó.
+             Bạn có thể kết thúc cuộc trò chuyện bằng nút x ở trên cùng bên phải."
+
+  utter_final_error_click:
+    - text: "Chúng tôi xin được hướng dẫn quý khách về việc đổi chuột.
+             chi tiết sẽ được hướng dẫn tại màn hình chat,quý khách vui lòng làm tiến hành từ nút dưới đây.
+             Nếu quý khách có hóa đơn trong vòng một tuần kể từ khi mua chuột thì sẽ có thể được tư vấn thay thế với cửa hàng đã mua."
+
+  utter_ask_first_from_error_pointer:
+    - text: "Vui lòng để giấy trắng không in chữ (giấy không bóng), chẳng hạn như giấy in dưới chuột và kiểm tra hoạt động của chuột
+
+             [Tại sao thử trên giấy trắng?
+             Do vật liệu và màu sắc của vật đặt dưới chuột mà đôi khi sẽ có trường hợp chuột không hoạt động bình thường."
+
+  utter_ask_first_from_error_other:
+    - text: "Kết nối OP"
