@@ -39,6 +39,7 @@
     - utter_did_that_help
 * deny
     - utter_ask_second_from_error_click
+    - utter_did_that_help
 * affirm
     - utter_bye
 * bye
