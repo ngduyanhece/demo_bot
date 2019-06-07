@@ -32,15 +32,15 @@ templates:
 
   utter_bye:
   - text: "tạm biệt bạn"
-  - text: "bibi"
+  - text: ""
   - text: "tạm biệt, có gì bạn cứ liên hệ mình nhé"
   - text: "cảm ơn bạn đã ghé shop, có gì cứ chat với mình, mình sẽ hỗ trợ!!!!"
 
   utter_did_that_help:
-    - text: "ok hok bạn?"
-    - text: "sửa được hok bạn?"
+    - text: "ok không bạn?"
+    - text: "sửa được không bạn?"
     - text: "tình hình ổn không bạn?"
-    - text: "bạn fix được chưa"
+    - text: "bạn sửa được chưa"
 
   utter_ask_issue:
     - text: "chuột bạn gặp phải vấn đề gì"
